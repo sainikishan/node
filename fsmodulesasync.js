@@ -31,4 +31,14 @@ fs.appendFile(filepath, "\nthis is a update data", "utf-8", (err) => {
         console.log("data will be update");
     }
 });
+//delete file
+fs.unlink(filepath,(err) => {
+    if (err) {
+        console.error(err);
+    }
+    else {
+        console.log("data will be delete");
+    }
+});
+
 
