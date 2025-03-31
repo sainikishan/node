@@ -1,4 +1,6 @@
-console.log(global);
-global.console.log("add");
-globalThis.console.log(module);
-console.log(process);
+// Modules
+// const add = require("./math");
+const {add,multi}=require("./math");
+console.log(add(5, 10));
+console.log(multi(5, 10));
+// commonjs
