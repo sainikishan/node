@@ -22,4 +22,13 @@ fs.readFile(filepath,  "utf-8", (err,data) => {
         console.log(data);
     }
 });
+//update file
+fs.appendFile(filepath, "\nthis is a update data", "utf-8", (err) => {
+    if (err) {
+        console.error(err);
+    }
+    else {
+        console.log("data will be update");
+    }
+});
 
