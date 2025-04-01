@@ -17,6 +17,16 @@ fs.promises
     .then((data) => console.log(data))
     .catch((err) => console.log(err))
 // crud
-fs.promises.writeFile(filename, "this is use promises", "utf-8")
+fs.promises.writeFile(filepath, "this is use promises new", "utf-8")
     .then((data)=>console.log(data))
     .catch((err) => console.log(err));
+//read 
+
+
+    fs.promises.readFile(filepath, "utf-8")
+    .then((data) => {
+        console.log("File content:", data);  // Logs the file content
+    })
+    .catch((err) => {
+        console.error("Error handling:", err);  // Logs the error if file reading fails
+    });

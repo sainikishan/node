@@ -1,2 +1,1 @@
-this is the inital data
-this is a update data
+this is use promises new
