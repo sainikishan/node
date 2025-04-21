@@ -2,7 +2,7 @@ const http = require("http");
 
 const server = http.createServer((req, res) => {
     if (req.url === "/") {
-        res.write("Welcome Kishan");
+        res.write("Welcome Kishan soni");
         res.end();
     } else if (req.url === "/about") {
         res.write("This is the About Page");

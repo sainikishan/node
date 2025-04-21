@@ -11,5 +11,20 @@
     "mysql": "^2.18.1",
     "mysql2": "^3.14.0",
     "sequelize": "^6.37.6"
+  },
+  "name": "node",
+  "version": "1.0.0",
+  "description": "kishan",
+  "main": "addpenduptae.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+     "start": "node server.js",
+     "start": "nodemon http_modules/server.js"
+  },
+  "author": "kishan saini",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.1.9"
   }
+
 }
