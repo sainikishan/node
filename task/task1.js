@@ -41,6 +41,15 @@ emitter.on("user-logout", (username) => {
     console.log(`User ${username} logged out`);
 });
 
+// Optional: Handle unknown events (optional helper)
+function safeEmit(event, ...args) {
+    if (emitter.listenerCount(event) === 0) {
+        console.log(`Unknown event: ${event} with arguments: ${args}`);
+        return;
+    }
+    emitter.emit(event, ...args);
+}
+
 // Summary event
 emitter.on("summary", () => {
     console.log(`\n--- User Activity Summary ---`);
@@ -63,7 +72,8 @@ emitter.emit("user-logout", "kishan");
 emitter.emit("user-login", "saini");
 emitter.emit("user-password", "saini", "mobile");
 emitter.emit("user-logout", "saini");
-emitter.emit("user-profile", "saini", "name"); // invalid event
+
+safeEmit("user-profile", "saini", "name"); // handled safely as unknown event
 
 emitter.emit("user-login", "kishan");
 emitter.emit("profile-update", "kishan", "phone");
