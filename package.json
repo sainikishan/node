@@ -16,15 +16,15 @@
   "version": "1.0.0",
   "description": "kishan",
   "main": "addpenduptae.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-     "start": "node server.js",
-     "start": "nodemon http_modules/server.js"
+    "start": "nodemon http_modules/server.js"
   },
   "author": "kishan saini",
   "license": "ISC",
   "devDependencies": {
     "nodemon": "^3.1.9"
-  }
-
+  },
+  "keywords": []
 }
