@@ -7,7 +7,7 @@ const port = 3000
 app.get('/', (req, res) => {
   res.send('Hello World!')
 })
-app.get('/twitter', (req, res) => { res.send('kishan saini') })
+app.get('/twitter', (req, res) => { res.send('kishan saini')   })
 app.get('/login', (req, res) => {
     res.send('<h1>login here</h1>')
 })
